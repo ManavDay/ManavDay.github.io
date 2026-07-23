@@ -1320,29 +1320,31 @@ function selectSector(name){
 
 /* ============ HUMAN DAY TIMELINE ============ */
 const tlEvents = [
-  {year:1214, cat:'Politics & World', title:'Battle of Bouvines', desc:'King Philip II of France defeated a rival coalition led by Otto IV, a turning point that strengthened the French monarchy for centuries.'},
-  {year:1694, cat:'Politics & World', title:'Bank of England founded', desc:'Established to help fund a war effort, it evolved into the model for modern central banking worldwide.'},
+  {year:1214, cat:'Politics', title:'Battle of Bouvines', desc:'King Philip II of France defeated a rival coalition led by Otto IV, a turning point that strengthened the French monarchy for centuries.'},
+  {year:1694, cat:'Politics', title:'Bank of England founded', desc:'Established to help fund a war effort, it evolved into the model for modern central banking worldwide.'},
   {year:1750, cat:'Notable Deaths', title:'Johann Sebastian Bach dies', desc:'One of history\u2019s greatest composers, whose work still shapes how music is taught and written.'},
-  {year:1789, cat:'Politics & World', title:'US Department of State established', desc:'Originally the Department of Foreign Affairs, signed into law by George Washington.'},
-  {year:1794, cat:'Politics & World', title:'Fall of Robespierre', desc:'Maximilien Robespierre was arrested, ending the Reign of Terror and closing a defining chapter of the French Revolution.'},
+  {year:1789, cat:'Politics', title:'US Department of State established', desc:'Originally the Department of Foreign Affairs, signed into law by George Washington.'},
+  {year:1794, cat:'Politics', title:'Fall of Robespierre', desc:'Maximilien Robespierre was arrested, ending the Reign of Terror and closing a defining chapter of the French Revolution.'},
   {year:1802, cat:'Notable Births', title:'Alexandre Dumas born', desc:'Author of The Three Musketeers and The Count of Monte Cristo.'},
-  {year:1830, cat:'Politics & World', title:'The July Revolution begins', desc:'Three days of uprising in France forced King Charles X to abdicate and brought Louis-Philippe to the throne.'},
+  {year:1830, cat:'Politics', title:'The July Revolution begins', desc:'Three days of uprising in France forced King Charles X to abdicate and brought Louis-Philippe to the throne.'},
   {year:1866, cat:'Science & Innovation', title:'First transatlantic cable completed', desc:'Cyrus Field finished laying the first successful telegraph cable between North America and Europe, collapsing weeks of travel time into minutes of messaging.'},
   {year:1909, cat:'Science & Innovation', title:'First official US Army flight test', desc:'Orville Wright flew himself and a passenger for over an hour above Fort Myer, Virginia, in the Army\u2019s first airplane.'},
   {year:1921, cat:'Science & Innovation', title:'Insulin isolated', desc:'Frederick Banting and Charles Best successfully isolated insulin at the University of Toronto, a breakthrough that has since saved millions of lives.'},
+   {year:1922, cat:'Notable Births', title:'Norman Lear', desc:'Norman Lear Born'}
   {year:1940, cat:'Arts & Culture', title:'Bugs Bunny\u2019s debut', desc:'Bugs Bunny made his official debut in the animated short A Wild Hare.'},
   {year:1949, cat:'Science & Innovation', title:'First jet airliner takes flight', desc:'The De Havilland Comet made its maiden test flight in England, opening the era of jet passenger travel.'},
-  {year:1953, cat:'Politics & World', title:'Korean War Armistice', desc:'The armistice was signed at Panmunjom, ending active fighting \u2014 though no formal peace treaty has been signed since.'},
-  {year:1955, cat:'Politics & World', title:'Austrian State Treaty takes effect', desc:'Restored Austria as a sovereign, democratic country and ended the Allied occupation after World War II.'},
+  {year:1953, cat:'Politics', title:'Korean War Armistice', desc:'The armistice was signed at Panmunjom, ending active fighting \u2014 though no formal peace treaty has been signed since.'},
+  {year:1955, cat:'Politics', title:'Austrian State Treaty takes effect', desc:'Restored Austria as a sovereign, democratic country and ended the Allied occupation after World War II.'},
   {year:1972, cat:'Notable Births', title:'Maya Rudolph born', desc:'Actor and comedian, longtime cast member of Saturday Night Live.'},
-  {year:1974, cat:'Politics & World', title:'US v. Nixon tapes ruling', desc:'The Supreme Court unanimously ruled that President Nixon had to release White House recordings \u2014 a pivotal Watergate moment.'},
+  {year:1974, cat:'Politics', title:'US v. Nixon tapes ruling', desc:'The Supreme Court unanimously ruled that President Nixon had to release White House recordings \u2014 a pivotal Watergate moment.'},
   {year:1981, cat:'Arts & Culture', title:'Wedding of Charles and Diana', desc:'Watched by hundreds of millions worldwide at St Paul\u2019s Cathedral.'},
   {year:1984, cat:'Notable Births', title:'Taylor Schilling born', desc:'Actor, known for Orange Is the New Black.'},
-  {year:1996, cat:'Politics & World', title:'Atlanta Olympic Park bombing', desc:'A bomb exploded at Centennial Olympic Park during the Summer Olympics, killing one person and injuring over a hundred.'},
+  {year:1996, cat:'Politics', title:'Atlanta Olympic Park bombing', desc:'A bomb exploded at Centennial Olympic Park during the Summer Olympics, killing one person and injuring over a hundred.'},
   {year:2003, cat:'Notable Deaths', title:'Bob Hope dies', desc:'Entertainer and comedian whose career spanned vaudeville, film, radio, and television.'},
   {year:2012, cat:'Arts & Culture', title:'London Olympics open', desc:'Queen Elizabeth II officially opened the Summer Games in a ceremony directed by Danny Boyle, the third time London hosted the Olympics.'}
+   {year:2015, cat:'Notable Deaths', title:'A.P. J Abdul Kalam', desc:'Abdul Kalam passed away.'}
 ];
-const tlCats = ['All','Politics & World','Science & Innovation','Arts & Culture','Notable Births','Notable Deaths'];
+const tlCats = ['All','Politics','Science & Innovation','Arts & Culture','Notable Births','Notable Deaths'];
 let tlActive = 'All';
 
 function buildTlFilters(){
